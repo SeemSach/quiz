@@ -16,7 +16,7 @@ getQuiz();
 let currentCard = -1;
 
 function getQuiz() {
-    fetch('https://us-central1-firstapp-f11c1.cloudfunctions.net/newQuizData')
+    fetch('https://us-central1-quizbackend-54f6a.cloudfunctions.net/quizData')
     .then( resp => resp.json())
     .then( respJson => {
         quiz = respJson;
