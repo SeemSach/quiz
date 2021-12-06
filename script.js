@@ -40,7 +40,7 @@ function nextCard() {
     card.classList.remove('flipped');
     setTimeout(()=>{
         currentCard = currentCard + 1 >= quiz.length ? front.textContent = "End of quiz" : currentCard + 1;
-        front.textContent = quiz[currentCard].question;
+        //front.textContent = quiz[currentCard].question;
         back.textContent = quiz[currentCard].answer;        
     }, 500);
     
