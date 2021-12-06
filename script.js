@@ -39,8 +39,8 @@ function prevCard() {
 function nextCard() {
     card.classList.remove('flipped');
     setTimeout(()=>{
-        currentCard = currentCard + 1 >= quiz.length ? front.textContent = "End of quiz" : currentCard + 1;
-        //front.textContent = quiz[currentCard].question;
+        currentCard = currentCard + 1 >= quiz.length ? currentCard : currentCard + 1;
+        front.textContent = quiz[currentCard].question;
         back.textContent = quiz[currentCard].answer;        
     }, 500);
     
